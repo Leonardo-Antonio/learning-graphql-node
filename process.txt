@@ -1,0 +1,9 @@
+COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+node     8163  leo   19u  IPv6  53157      0t0  TCP *:4000 (LISTEN)
+node     8163  leo   22u  IPv6  58555      0t0  TCP localhost:4000->localhost:36608 (CLOSE_WAIT)
+brave   10190  leo   25u  IPv6  72030      0t0  TCP localhost:36640->localhost:4000 (ESTABLISHED)
+brave   10190  leo   26u  IPv6  70863      0t0  TCP localhost:36636->localhost:4000 (ESTABLISHED)
+brave   10190  leo   29u  IPv6  70874      0t0  TCP localhost:36642->localhost:4000 (ESTABLISHED)
+brave   10190  leo   30u  IPv6  70358      0t0  TCP localhost:36644->localhost:4000 (ESTABLISHED)
+brave   10190  leo   31u  IPv6  70879      0t0  TCP localhost:36646->localhost:4000 (ESTABLISHED)
+brave   10190  leo   32u  IPv6  70363      0t0  TCP localhost:36648->localhost:4000 (ESTABLISHED)
