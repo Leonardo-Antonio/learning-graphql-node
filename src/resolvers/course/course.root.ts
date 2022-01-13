@@ -7,12 +7,15 @@ export const Course = {
     args: any,
     ctx: Context,
     info: any
-  ) => {
-    const users: Array<IUser> | null = ctx.users.filter(
+  ): IUser => {
+    const users: Array<IUser> | null = ctx.db.users.filter(
       (item) => item.id === parent.created_at
     );
     if (users == null)
       throw new Error("el usuario que creo este curso ya no existe");
-    return users[0];
+
+    const user = users[0];
+
+    return user;
   },
 };

@@ -1,12 +1,17 @@
 type Query {
   getUsers: [User!]!
   getUserById(id: ID!): User!
-
   getCourses: [Course!]!
 }
 
 type Mutation {
   createUser(data: userInput!): User
+  singUp(data: userInput!): UserPayload
+}
+
+type UserPayload {
+  user: User!
+  token: String!
 }
 
 type User {
@@ -24,4 +29,14 @@ type Course {
 input userInput {
   name: String!
   age: Int!
+}
+
+type Subscription {
+  message: String!
+  user: UserSubcription!
+}
+
+type UserSubcription {
+  mutation: String!
+  data: User!
 }
